@@ -1,5 +1,5 @@
 # App-Boveda
-Necesitaba una aplicación para guardar mis contraseñas, la cree yo mismo.
+Necesitaba una aplicación para guardar mis contraseñas, la cree yo mismo. (increible lo que se puede hacer con un poco de programacion, IA y buenos prompts)
 
 🔐Gestor de Contraseñas Seguro🔐
 Este proyecto es una aplicación de escritorio robusta y moderna diseñada para la gestión local de credenciales. El objetivo principal es ofrecer una alternativa privada y segura a los gestores en la nube, manteniendo el control total de los datos en el equipo del usuario.
@@ -24,7 +24,7 @@ Cifrado Fernet: Este hash se utiliza como base para inicializar el protocolo Fer
 
 Persistencia: Los datos se guardan en formato BLOB dentro de la base de datos SQLite, lo que significa que incluso si alguien roba el archivo .db, solo verá cadenas de texto cifradas e ilegibles.
 
-💻 Instalación y Uso
+💻 Instalación y Uso 💻
 Clona el repositorio.
 
 Instala las dependencias: pip install customtkinter cryptography pyperclip.
