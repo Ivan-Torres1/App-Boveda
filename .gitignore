@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+mis_claves.db
+.env
+.DS_Store
