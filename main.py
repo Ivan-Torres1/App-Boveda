@@ -1,10 +1,10 @@
 import customtkinter as ctk
 import tkinter.messagebox as msg
-import pyperclip  # Librería para el portapapeles
-from backend import PasswordManagerLogic # Importamos nuestra lógica
+import pyperclip  
+from backend import PasswordManagerLogic 
 
 # Configuración inicial de apariencia
-ctk.set_appearance_mode("Dark")  # Forzamos modo oscuro para que se vea más 'hacker'
+ctk.set_appearance_mode("Dark")  
 ctk.set_default_color_theme("blue")
 
 class PasswordManagerApp(ctk.CTk):
@@ -22,12 +22,10 @@ class PasswordManagerApp(ctk.CTk):
         self.login_frame = None
         self.main_frame = None
         
-        # Iniciamos
+       
         self.show_login_screen()
 
-    # ------------------------------------------------------------------
-    # PANTALLA DE LOGIN
-    # ------------------------------------------------------------------
+   
     def show_login_screen(self):
         if self.main_frame:
             self.main_frame.destroy()
@@ -56,9 +54,7 @@ class PasswordManagerApp(ctk.CTk):
         # Pasamos a la app principal
         self.show_main_app()
 
-    # ------------------------------------------------------------------
-    # PANTALLA PRINCIPAL
-    # ------------------------------------------------------------------
+
     def show_main_app(self):
         if self.login_frame:
             self.login_frame.destroy()
