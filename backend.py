@@ -1,4 +1,4 @@
-# Guardar como backend.py
+
 import sqlite3
 import hashlib
 import base64
