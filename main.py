@@ -1,10 +1,10 @@
 import customtkinter as ctk
 import tkinter.messagebox as msg
-from tkinter import filedialog # Para elegir donde guardar el backup
-import pyperclip
-from backend import PasswordManagerLogic
+import pyperclip  
+from backend import PasswordManagerLogic 
 
-ctk.set_appearance_mode("Dark")
+# Configuración inicial de apariencia
+ctk.set_appearance_mode("Dark")  
 ctk.set_default_color_theme("blue")
 
 class PasswordManagerApp(ctk.CTk):
@@ -17,9 +17,10 @@ class PasswordManagerApp(ctk.CTk):
         self.login_frame = None
         self.main_frame = None
         
+       
         self.show_login_screen()
 
-    # --- LOGIN MEJORADO ---
+   
     def show_login_screen(self):
         if self.main_frame: self.main_frame.destroy()
         self.login_frame = ctk.CTkFrame(self)
@@ -53,7 +54,7 @@ class PasswordManagerApp(ctk.CTk):
             self.lbl_error.configure(text=message)
             self.entry_password.delete(0, 'end') # Limpiamos campo
 
-    # --- APP PRINCIPAL ---
+
     def show_main_app(self):
         if self.login_frame: self.login_frame.destroy()
         self.main_frame = ctk.CTkFrame(self)
